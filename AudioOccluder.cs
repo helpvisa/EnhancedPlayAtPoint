@@ -12,7 +12,7 @@ public class AudioOccluder : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
         initialVolume = audioSource.volume;
-        player = FindObjectOfType<PlayerController>();
+        player = FindObjectOfType<AudioListener>();
     }
 
     void Update()
@@ -39,7 +39,7 @@ public class AudioOccluder : MonoBehaviour
     // components
     AudioLowPassFilter lowPass;
     AudioSource audioSource;
-    PlayerController player;
+    AudioListener player;
 
     // variables
     public float lowPassRolloff = 1000;
