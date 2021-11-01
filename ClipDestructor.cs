@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ClipDestructor : MonoBehaviour
@@ -15,7 +13,7 @@ public class ClipDestructor : MonoBehaviour
         }
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (followForDuration && target != null)
         {
